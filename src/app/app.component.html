@@ -13,7 +13,9 @@
               required
               ngModel>
           </div>
-          <button class="btn btn-default" type="button">Suggest an Username</button>
+          <button class="btn btn-default"
+            (click) = "suggestUserName()"
+            type="button">Suggest an Username</button>
           <div class="form-group">
             <label for="email">Mail</label>
             <input type="email"
@@ -43,7 +45,7 @@
         <div class="form-group">
           <textarea
           class="form-control"
-            name="questionAnswar"
+            name="questionAnswer"
             rows="3"
             [(ngModel)]="answer">
           </textarea>
